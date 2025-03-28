@@ -5,7 +5,7 @@ export BOARD_MAKER="AM60"
 export BOARD_SOC="Rockchip RK3588"
 export BOARD_CPU="ARM Cortex A76 / A55"
 export UBOOT_PACKAGE="u-boot-smart-am60"
-export UBOOT_RULES_TARGET="smart-am60-rk3588"
+export UBOOT_RULES_TARGET="u-boot-radxa-rk3588"
 export COMPATIBLE_SUITES=("jammy" "noble")
 export COMPATIBLE_FLAVORS=("server" "desktop")
 
