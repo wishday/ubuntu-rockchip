@@ -371,7 +371,7 @@ Description: A boot loader for the Orange Pi 5 CM5.
  supported architectures, including PPC, ARM, MIPS, x86, m68k,
  NIOS, and Microblaze.
 
-Package: u-boot-smart-am60
+Package: u-boot-smart-am60-rk3588
 Architecture: arm64
 Priority: optional
 Depends: mtd-utils
