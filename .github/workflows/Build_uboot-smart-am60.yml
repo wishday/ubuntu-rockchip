@@ -1,4 +1,4 @@
-name: Build-smart-am60
+name: Build-uboot-smart-am60
 
 on:
   workflow_dispatch:
