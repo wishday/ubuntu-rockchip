@@ -23,7 +23,7 @@ if [ ! -d "${UBOOT_PACKAGE}" ]; then
     git -C "${UBOOT_PACKAGE}" checkout "${COMMIT}"
     cp -r ../packages/"${UBOOT_PACKAGE}"/debian "${UBOOT_PACKAGE}"
     # copy customed uboot_defconfig
-    mv "${UBOOT_PACKAGE}"/smart-am60-rk3588_defconfig "${UBOOT_PACKAGE}"/configs
+    cp ../packages/"${UBOOT_PACKAGE}"/debian/smart-am60-rk3588_defconfig "${UBOOT_PACKAGE}"/configs
 
 fi
 cd "${UBOOT_PACKAGE}"
