@@ -32,7 +32,7 @@ ${u-boot-rockchip_platforms}:
 	@mkdir -p debian/build/$@/arch/arm/mach-rockchip
 	@cp arch/arm/mach-rockchip/decode_bl31.py debian/build/$@/arch/arm/mach-rockchip/decode_bl31.py
 
-	@cp debian/rkbin/$($@_bl31) debian/build/$@/bl31.elf
+	@cp -r debian/rkbin/$($@_bl31) debian/build/$@/bl31.elf
 
 	make O=debian/build/$@ \
 	  CROSS_COMPILE=$(CROSS_COMPILE) \
