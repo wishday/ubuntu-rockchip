@@ -24,7 +24,7 @@ if [ ! -d "${UBOOT_PACKAGE}" ]; then
     cp -r ../packages/"${UBOOT_PACKAGE}"/debian "${UBOOT_PACKAGE}"
     # copy customed uboot_defconfig
     cp ../packages/"${UBOOT_PACKAGE}"/debian/smart-am60-rk3588_defconfig "${UBOOT_PACKAGE}"/configs
-    cp ../packages/"${UBOOT_PACKAGE}"/debian/smart-am60.dts "${UBOOT_PACKAGE}"/arch/arm/dts
+    cp ../packages/"${UBOOT_PACKAGE}"/debian/rk3588-smart-am60.dts "${UBOOT_PACKAGE}"/arch/arm/dts
 
 fi
 cd "${UBOOT_PACKAGE}"
