@@ -21,12 +21,10 @@ if [ ! -d "${UBOOT_PACKAGE}" ]; then
     source ../packages/"${UBOOT_PACKAGE}"/debian/upstream
     git clone --single-branch --progress -b "${BRANCH}" "${GIT}" "${UBOOT_PACKAGE}"
     git -C "${UBOOT_PACKAGE}" checkout "${COMMIT}"
-    echo 24
     cp -r ../packages/"${UBOOT_PACKAGE}"/debian "${UBOOT_PACKAGE}"
-    echo 26
     # copy customed uboot_defconfig
     cp ../packages/"${UBOOT_PACKAGE}"/debian/smart-am60-rk3588_defconfig "${UBOOT_PACKAGE}"/configs
-    echo 29
+    cp ../packages/"${UBOOT_PACKAGE}"/debian/smart-am60.dts "${UBOOT_PACKAGE}"/arch/arm/dts
 
 fi
 cd "${UBOOT_PACKAGE}"
